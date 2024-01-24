@@ -97,6 +97,10 @@ $( document ).ready(function() {
           stop = 1;
         }
       });
+      //parallax
+      setTimeout(function(){
+        $('#data-area').parallax({imageSrc: 'img/cidadeparallax.png'})
+      }, 250)
 
 
 
