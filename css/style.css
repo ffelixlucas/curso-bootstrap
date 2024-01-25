@@ -617,6 +617,8 @@ body {
     }
   
     #call-area p, #call-area #call-btn {
+      font-size: 14px;
+      letter-spacing: 0;
       margin: 0;
       width: 50%;
     }
