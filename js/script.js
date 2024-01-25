@@ -177,6 +177,23 @@ $( document ).ready(function() {
     }, 800);
   });
 
+   // Adiciona rolagem suave para todos os links âncora
+   $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      // Armazena o hash
+      var hash = this.hash;
+
+      // Anima a rolagem
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function() {
+        // Adiciona o hash (#) à URL quando a rolagem estiver concluída
+        window.location.hash = hash;
+      });
+    }
+  });
 
 
 
